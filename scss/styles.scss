@@ -1,0 +1,114 @@
+/*  VARIABLES */
+
+// COLORS
+$primary: rgb(143, 237, 250);
+$secondary: rgb(26, 25, 25);
+$grey: rgb(129, 128, 128);
+$greyLight: rgb(247, 241, 241);
+
+// FONTS
+// logo
+$logoFont: "Cinzel", serif;
+
+// text font
+$textFont: "Nunito", sans-serif;
+// HEADING
+// LINE-HEIGHT
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  //   background-color: white;
+}
+
+body {
+  font-family: $textFont;
+}
+
+.portfolio-container {
+  max-width: 95%;
+  width: 75rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $logoFont;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+li,
+a {
+  font-family: $textFont;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  color: $secondary;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2em;
+  //   margin: 0 1em;
+  //   background-color: #a55555;
+
+  .logo {
+    font-family: $logoFont;
+    font-size: 36px;
+  }
+
+  .nav-links {
+    display: flex;
+
+    & li {
+      margin: 0 1em;
+    }
+    & a {
+      font-family: $logoFont;
+      font-weight: bold;
+    }
+  }
+}
+
+.hero {
+  //   max-width: 56.25rem;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+
+  .bio-paraph {
+    width: 400px;
+  }
+  .photo-profil img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .competences {
+    margin: 1.25rem 0;
+    font-weight: bold;
+  }
+  .cta {
+    margin-top: 1.25rem;
+    padding: 1rem 0;
+    background-color: aquamarine;
+    color: $secondary;
+    border: none;
+    // padding: 100%;
+    a {
+      padding: 1rem 2rem;
+      font-family: $logoFont;
+      font-weight: bold;
+    }
+  }
+}

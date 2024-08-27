@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,41 +22,164 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/css/main.css" />
-    <title>EDOUMPS</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <title>EDOUMPS | Portfolio</title>
   </head>
   <body>
-    <div class="portfolio-wrapper">
-      <header class="header-wrapper">
-        <!-- logo & navigation section -->
-        <div class="logo-nav-wrapper">
-          <div class="logo">
-            <h1 class="nom">MBA PERSYS</h1>
-            <p class="titre">BRAND DESIGNER / DIGITAL MARKETER</p>
-            <!-- navigation menu -->
-            <nav class="navigation-menu">
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#apropos">Qui suis-je?</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- end of logo & nav section -->
-          <!-- hero section -->
-          <div class="hero-section-wrapper">
-            <h2>Nous allons faire briller votre entreprise ensemble!</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis, modi.
-            </p>
-            <button class="cta">Contactez-moi</button>
-          </div>
-          <!-- end hero section -->
-        </div>
+    <div class="portfolio-container">
+      <header class="header">
+        <h3><a class="logo" href="#accueil">EDOUMBA PERSYS</a></h3>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#qui-suis-je">Qui-suis-je?</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#mes-projets">Projets</a></li>
+            <li><a href="#mes-contacts">Contacts</a></li>
+          </ul>
+        </nav>
       </header>
+      <section class="hero">
+        <div class="biographie">
+          <h2 class="nom">A propos</h2>
+          <p class="competences">
+            BRAND DESIGNER / WEB DEVELOPER / MARKETING EXPERT
+          </p>
+          <p class="bio-paraph">
+            Je suis un développeur web chevronné avec une expérience approfondie
+            en développement front-end et back-end. Avec une solide expérience
+            dans la gestion et la maintenance de sites web pour des
+            organisations majeures, y compris le Ministère des Affaires
+            Étrangères au Gabon, j'apporte une expertise technique complète et
+            une passion pour l'innovation à chaque projet que je réalise.
+          </p>
+          <button class="cta"><a href="">Contactez-moi</a></button>
+        </div>
+        <div class="photo-profil">
+          <img src="/assets/images/image-profil.png" alt="" />
+        </div>
+      </section>
+      <!-- SECTION A PROPOS -->
+    
+          <!--  -->
+          <div class="parcours-professionel">
+            <h2>Parcours Professionel</h2>
+            <ul>
+              <li>
+                Webmestre au Ministère des Affaires Étrangères, Gabon (2005 –
+                Aujourd'hui)
+              </li>
+              <li>
+                Technicien Helpdesk chez Bell Sympatico, Canada (1999 – 2002)
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+        <div class="formation">
+          <p>
+            Licence Professionnelle en Techniques des Systèmes d’Information –
+            La Cité Collégiale, Ottawa (Canada), 1998-2001
+          </p>
+        </div>
+        <!--  -->
+        <div class="centres_interets">
+          <p>
+            En dehors du développement web, j'aime explorer les nouvelles
+            tendances technologiques, jouer au basket-ball et voyager.
+          </p>
+        </div>
+        <!--  -->
+      </section>
+      <!-- FIN SECTION A PROPOS -->
+      <!-- SECTION SERVICES (CARROUSEL) -->
+      <section class="container">
+        <h2>Services</h2>
+        <div class="afficher-tout-container">
+          <p>Services offerts</p>
+          <a href="#projets">Afficher tout</a>
+        </div>
+        <div class="cards-wrapper">
+          <div class="projet-card">
+            <h2>Landing Page</h2>
+            <img src="/assets/images/Rectangle 30.png" alt="landing page" />
+            <p>12 Feb 2024 | Entreprise Flexcor/ Startup</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus harum adipisci deserunt inventore, atque placeat rerum
+              vel praesentium nesciunt soluta!
+            </p>
+          </div>
+          <div class="projet-card">
+            <h2>Landing Page</h2>
+            <img src="/assets/images/Rectangle 46.png" alt="landing page" />
+            <p>12 Feb 2024 | Entreprise Flexcor/ Startup</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repellendus harum adipisci deserunt inventore, atque placeat rerum
+              vel praesentium nesciunt soluta!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- FIN SECTION SERVICES -->
+      <!-- SECTION PROJETS  -->
+      <section class="projets-container">
+        <h1>Projets</h1>
+        <div class="projets-affiche-container">
+          <h2>Projets Recents</h2>
+          <a href="#projets">Affichez tout</a>
+          <div class="card">
+            <img src="/assets/images/Rectangle 30.png" alt="" />
+            <div class="text-section">
+              <h2>Designing a Landing Page</h2>
+              <p>2020</p>
+              <p>Dashboard</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                repudiandae dicta reiciendis et distinctio asperiores
+                voluptatibus quod expedita quibusdam corrupti?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/Rectangle 34.png" alt="" />
+            <div class="text-section">
+              <h2>Designing a Landing Page</h2>
+              <p>2020</p>
+              <p>Dashboard</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                repudiandae dicta reiciendis et distinctio asperiores
+                voluptatibus quod expedita quibusdam corrupti?
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/Rectangle 46.png" alt="" />
+            <div class="text-section">
+              <h2>Designing a Landing Page</h2>
+              <p>2020</p>
+              <p>Dashboard</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                repudiandae dicta reiciendis et distinctio asperiores
+                voluptatibus quod expedita quibusdam corrupti?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIN SECTION PROJETS  -->
+      <!-- SECTION CONTACT -->
+      <h>Contactez-moi</h>
+      <div class="icons-container">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <!-- fin contact -->
     </div>
   </body>
 </html>
